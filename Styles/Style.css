@@ -1,0 +1,208 @@
+@import url('https://fonts.googleapis.com/css2?family=Padauk:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Noto+Sans+TC&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    padding: 20px;
+    text-align: center;
+    background-color: white;
+    position: sticky;
+    top: 0;
+    font-family: 'Padauk', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu {
+list-style: none;
+display: flex;
+gap: 60px;
+}
+
+.menu__item {
+    font-family: 'Padauk', sans-serif;
+}
+
+.menu__item > a {
+    font-family: 'Padauk', sans-serif;
+    text-decoration: none;
+    color: #b4b4b4;
+  }
+
+.logo {
+    margin-left: 20px;
+    margin-right: 20px;
+    color: rgb(107, 54, 54);
+    cursor: pointer;
+    font-family: 'Anton', sans-serif;
+font-family: 'Noto Sans TC', sans-serif;
+}
+
+.imagenFondo {
+    height: 500px;
+    width: 100%;
+    background-image: url("../img/imagenFondo.jpg");
+    background-attachment: fixed;
+    font-size: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh
+}
+
+.imagenFondo h4 {
+    font-family: 'Padauk', sans-serif;
+    color: #b4b4b4;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas: 
+        "musculacion crossfit salon"
+        "musculacion aerobico salon";
+    padding: 80px;
+    font-family: 'Padauk', sans-serif;
+    gap: 30px;
+    align-items: center;
+}
+
+
+.card {
+    background-color: #b4b4b4;
+    padding: 20px;
+    border-radius: 10px;
+    font-family: 'Padauk', sans-serif;
+    max-width: 600px;
+    text-align: center;
+    }
+
+    .musculacion {
+        grid-area: musculacion;
+    }
+
+    .crossfit {
+        grid-area: crossfit;
+    }
+
+    .aerobico {
+        grid-area: aerobico;
+    }
+
+    .salon {
+        grid-area: salon;
+    }
+   
+
+.card__img {
+    max-width: 100%;
+}
+
+.card__button {
+    background-color: rgb(189, 184, 184);
+    border: 0;
+    padding: 5px;
+    cursor: pointer;
+}
+
+footer {
+    text-align: center;
+    background-color: #b4b4b4;
+    padding: 30px;
+    font-family: 'Padauk', sans-serif;
+}
+
+.wp {
+    width: 50px;
+    position: fixed;
+    top: 5px;
+    right: 5px;
+    cursor: pointer;
+}
+
+.formulario {
+    background-attachment: fixed;
+    padding: 60px;
+    justify-content: center;
+    align-items: center;
+    background-position: center center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    background-image: url("../img/imagenFondo.jpg");
+    min-height: 100vh
+    }
+
+.formulario__campo {
+    display: flex;
+    gap: 10px;
+}
+
+.formulario__campo label {
+    width: 100px;
+    color: #b4b4b4;
+}
+
+.formulario__boton {
+    width: 150px;
+}
+
+.colorColumna {
+    background-color: gray;
+}
+
+.quienesPolitica {
+    color: gray;
+    padding: 35px;
+    font-family: 'Padauk', sans-serif;
+    text-align: center;
+    vertical-align: middle;
+  }
+
+  
+  @media screen and (max-width: 648px){
+    .cards {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4, 1fr);
+        grid-template-areas:
+            "musculacion"
+            "crossfit"
+            "aerobico"
+            "salon";
+            padding: 20px;
+        }
+
+
+    .menu, header {
+        flex-direction: column;
+        gap: 0px;
+    }
+
+    .imagenFondo {
+        height: 200px;
+        padding: 75px;
+
+    }
+    .quienesPolitica {
+        font-size: small;
+        color: #b4b4b4
+    }
+
+
+
+}
+    
+
+    
+
+
+
