@@ -41,8 +41,9 @@ gap: 60px;
     color: rgb(107, 54, 54);
     cursor: pointer;
     font-family: 'Anton', sans-serif;
-font-family: 'Noto Sans TC', sans-serif;
+    font-family: 'Noto Sans TC', sans-serif;
 }
+
 
 .imagenFondo {
     height: 500px;
@@ -125,7 +126,9 @@ footer {
     top: 5px;
     right: 5px;
     cursor: pointer;
+    height: 50px;
 }
+
 
 .formulario {
     background-attachment: fixed;
