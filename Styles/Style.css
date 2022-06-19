@@ -42,6 +42,16 @@ gap: 60px;
     cursor: pointer;
     font-family: 'Anton', sans-serif;
     font-family: 'Noto Sans TC', sans-serif;
+    animation-name: logo;
+    animation-duration: 4s;
+    animation-delay: 3s;
+    position: relative;
+}
+
+@keyframes logo {
+    0% {right: 0;top: 0px;}
+    50% {right: 300px;top: 0px;}
+    100% {right: 0px; top: 0px;}
 }
 
 
@@ -60,6 +70,11 @@ gap: 60px;
 .imagenFondo h4 {
     font-family: 'Padauk', sans-serif;
     color: #b4b4b4;
+    transition: width 2.5s; 
+    width: 600px;
+}
+.imagenFondo h4:hover{ 
+    width: 900px;
 }
 
 .cards {
@@ -126,7 +141,10 @@ footer {
     top: 5px;
     right: 5px;
     cursor: pointer;
-    height: 50px;
+}
+
+.transForm:hover .wp {
+    transform: scale(0.5);
 }
 
 
