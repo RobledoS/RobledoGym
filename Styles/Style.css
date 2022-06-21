@@ -7,6 +7,7 @@
     box-sizing: border-box;
 }
 
+
 header {
     padding: 20px;
     text-align: center;
@@ -42,40 +43,29 @@ gap: 60px;
     cursor: pointer;
     font-family: 'Anton', sans-serif;
     font-family: 'Noto Sans TC', sans-serif;
-    animation-name: logo;
-    animation-duration: 4s;
-    animation-delay: 3s;
-    position: relative;
 }
 
-@keyframes logo {
-    0% {right: 0;top: 0px;}
-    50% {right: 300px;top: 0px;}
-    100% {right: 0px; top: 0px;}
-}
 
 
 .imagenFondo {
-    height: 500px;
-    width: 100%;
     background-image: url("../img/imagenFondo.jpg");
-    background-attachment: fixed;
-    font-size: 35px;
+    background-position: center center;
+    background-size: cover;
+    height: 80vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 100vh
 }
+  
 
 .imagenFondo h4 {
     font-family: 'Padauk', sans-serif;
     color: #b4b4b4;
-    transition: width 2.5s; 
-    width: 600px;
+    align-items: center;
+    justify-content: center;
+    font-size: 35px;
 }
-.imagenFondo h4:hover{ 
-    width: 900px;
-}
+
 
 .cards {
     display: grid;
@@ -90,15 +80,6 @@ gap: 60px;
     align-items: center;
 }
 
-
-.card {
-    background-color: #b4b4b4;
-    padding: 20px;
-    border-radius: 10px;
-    font-family: 'Padauk', sans-serif;
-    max-width: 600px;
-    text-align: center;
-    }
 
     .musculacion {
         grid-area: musculacion;
@@ -143,11 +124,6 @@ footer {
     cursor: pointer;
 }
 
-.transForm:hover .wp {
-    transform: scale(0.5);
-}
-
-
 .formulario {
     background-attachment: fixed;
     padding: 60px;
@@ -189,7 +165,6 @@ footer {
     vertical-align: middle;
   }
 
-  
   @media screen and (max-width: 648px){
     .cards {
         grid-template-columns: 1fr;
@@ -203,24 +178,80 @@ footer {
         }
 
 
+
     .menu, header {
         flex-direction: column;
         gap: 0px;
     }
 
-    .imagenFondo {
+    .imagenFondo { 
         height: 200px;
         padding: 75px;
-
-    }
+        background-size: cover;
+     }
     .quienesPolitica {
         font-size: small;
         color: #b4b4b4
     }
   }
+
+  .navbar-brand{
+    margin-left: 20px;
+    margin-right: 20px;
+    color: rgb(107, 54, 54);
+    cursor: pointer;
+    font-family: 'Anton', sans-serif;
+    font-family: 'Noto Sans TC', sans-serif;
+    }
     
 
+    .nav-item {
+        font-family: 'Padauk', sans-serif;
+    }
     
+    .nav-item > a {
+        font-family: 'Padauk', sans-serif;
+        text-decoration: none;
+        color: #b4b4b4;
+      }
+
+      .nav-item .nav-link.active {
+        font-weight: 600;
+        text-decoration: underline;
+      }
+    
+    .imagenFondo h4 {
+     color: rgb(165, 158, 158);
+     margin: 0;
+     padding: 110px;
+ }
+    .tarjetitas {
+        padding-block: 50px;
+    }
+    
+    
+    .card {
+    background-color: #b4b4b4;
+     }
+
+    .botonVermas {
+        background-color: grey;
+        border-color: gray;
+    }
+
+     .botonVermas:hover {
+    background-color: white;
+    color: black;
+    border-color: white;
+    }
+
+
+    .col-12 h2 {
+    text-align: center;
+    color: white;
+    }
+        
+
 
 
 
