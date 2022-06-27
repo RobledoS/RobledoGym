@@ -7,7 +7,6 @@
     box-sizing: border-box;
 }
 
-
 header {
     padding: 20px;
     text-align: center;
@@ -18,23 +17,8 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
+    z-index: 1;
 }
-
-.menu {
-list-style: none;
-display: flex;
-gap: 60px;
-}
-
-.menu__item {
-    font-family: 'Padauk', sans-serif;
-}
-
-.menu__item > a {
-    font-family: 'Padauk', sans-serif;
-    text-decoration: none;
-    color: #b4b4b4;
-  }
 
 .logo {
     margin-left: 20px;
@@ -55,6 +39,7 @@ gap: 60px;
     display: flex;
     justify-content: center;
     align-items: center;
+    font-family: 'Noto Sans TC', sans-serif;
 }
   
 
@@ -63,50 +48,8 @@ gap: 60px;
     color: #b4b4b4;
     align-items: center;
     justify-content: center;
-    font-size: 35px;
-}
-
-
-.cards {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    grid-template-areas: 
-        "musculacion crossfit salon"
-        "musculacion aerobico salon";
-    padding: 80px;
-    font-family: 'Padauk', sans-serif;
-    gap: 30px;
-    align-items: center;
-}
-
-
-    .musculacion {
-        grid-area: musculacion;
-    }
-
-    .crossfit {
-        grid-area: crossfit;
-    }
-
-    .aerobico {
-        grid-area: aerobico;
-    }
-
-    .salon {
-        grid-area: salon;
-    }
-   
-
-.card__img {
-    max-width: 100%;
-}
-
-.card__button {
-    background-color: rgb(189, 184, 184);
-    border: 0;
-    padding: 5px;
-    cursor: pointer;
+    font-size: 20px;
+    font-family: 'Noto Sans TC', sans-serif;
 }
 
 footer {
@@ -116,56 +59,18 @@ footer {
     font-family: 'Padauk', sans-serif;
 }
 
+
 .wp {
     width: 50px;
     position: fixed;
-    top: 5px;
+    bottom: 5px;
     right: 5px;
     cursor: pointer;
+    font-family: 'Noto Sans TC', sans-serif;
+    z-index: 2;
 }
 
-.formulario {
-    background-attachment: fixed;
-    padding: 60px;
-    justify-content: center;
-    align-items: center;
-    background-position: center center;
-    background-size: cover;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    align-items: center;
-    background-image: url("../img/imagenFondo.jpg");
-    min-height: 100vh
-    }
-
-.formulario__campo {
-    display: flex;
-    gap: 10px;
-}
-
-.formulario__campo label {
-    width: 100px;
-    color: #b4b4b4;
-}
-
-.formulario__boton {
-    width: 150px;
-}
-
-.colorColumna {
-    background-color: gray;
-}
-
-.quienesPolitica {
-    color: gray;
-    padding: 35px;
-    font-family: 'Padauk', sans-serif;
-    text-align: center;
-    vertical-align: middle;
-  }
-
-  @media screen and (max-width: 648px){
+@media screen and (max-width: 648px){
     .cards {
         grid-template-columns: 1fr;
         grid-template-rows: repeat(4, 1fr);
@@ -175,21 +80,29 @@ footer {
             "aerobico"
             "salon";
             padding: 20px;
+            font-family: 'Noto Sans TC', sans-serif;
         }
-
 
 
     .menu, header {
         flex-direction: column;
         gap: 0px;
+        font-family: 'Noto Sans TC', sans-serif;
     }
 
     .imagenFondo { 
         height: 200px;
         padding: 75px;
         background-size: cover;
-     }
-    .quienesPolitica {
+        font-family: 'Noto Sans TC', sans-serif;
+        height: auto;
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+     
+    
+    
+     .quienesPolitica {
         font-size: small;
         color: #b4b4b4
     }
@@ -202,6 +115,11 @@ footer {
     cursor: pointer;
     font-family: 'Anton', sans-serif;
     font-family: 'Noto Sans TC', sans-serif;
+    transition: transform .2s;
+    }
+
+    .navbar-brand:hover {
+        transform: scale(1.05);
     }
     
 
@@ -223,12 +141,10 @@ footer {
     .imagenFondo h4 {
      color: rgb(165, 158, 158);
      margin: 0;
-     padding: 110px;
  }
     .tarjetitas {
         padding-block: 50px;
     }
-    
     
     .card {
     background-color: #b4b4b4;
@@ -237,6 +153,8 @@ footer {
     .botonVermas {
         background-color: grey;
         border-color: gray;
+        align-items: center;
+        justify-content: center;
     }
 
      .botonVermas:hover {
@@ -248,10 +166,41 @@ footer {
 
     .col-12 h2 {
     text-align: center;
-    color: white;
+    color: rgb(179, 170, 170);
+    font-family: 'Noto Sans TC', sans-serif;
     }
         
+    .formato__formulario {
+        background-color: #b4b4b4;
+    }
+    
+    .colorSection{
+        display: flex;
+        background-color: #b4b4b4;
+        align-items: center;
+        justify-content: center;
+    }
 
+    .card {
+        transition: all 0.2s;
+    }
 
+    .card:hover {
+     box-shadow: 5px 5px 20px rgba(0,0,0.0,4);
+     transform: scale(1.05)
+    }
+ 
+  .imagenTarjetitas {
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+    justify-content: center;
+}
 
+.imagenTarjetitas img { 
+    object-fit: cover;
+    width: auto;
+    min-width: 100%;
+    height: 100%;
+}
 
