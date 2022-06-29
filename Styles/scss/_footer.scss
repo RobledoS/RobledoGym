@@ -1,0 +1,16 @@
+footer {
+    text-align: center;
+    background-color: #b4b4b4;
+    padding: 30px;
+    font-family: 'Padauk', sans-serif;
+}
+
+.wp {
+    width: 50px;
+    position: fixed;
+    bottom: 5px;
+    right: 5px;
+    cursor: pointer;
+    font-family: 'Noto Sans TC', sans-serif;
+    z-index: 2;
+}

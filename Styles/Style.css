@@ -151,8 +151,8 @@ footer {
      }
 
     .botonVermas {
-        background-color: grey;
-        border-color: gray;
+        background-color: #b4b4b4;
+        border-color: #b4b4b4;
         align-items: center;
         justify-content: center;
     }
@@ -166,7 +166,7 @@ footer {
 
     .col-12 h2 {
     text-align: center;
-    color: rgb(179, 170, 170);
+    color: #b4b4b4;
     font-family: 'Noto Sans TC', sans-serif;
     }
         
