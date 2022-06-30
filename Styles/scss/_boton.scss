@@ -1,14 +1,14 @@
 .botonVermas {
     background-color: gray;
-    border-color: #b4b4b4;
+    border-color: white;
     align-items: center;
     justify-content: center;
 
 
     &:hover {
-        background-color: white;
+        background-color: red;
         color: black;
-        border-color: white;
+        border-color: $gris;
         }
 }
 

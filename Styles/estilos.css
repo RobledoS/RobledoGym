@@ -1,3 +1,7 @@
+@import url("https://fonts.googleapis.com/css2?family=Padauk:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Anton&family=Noto+Sans+TC&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Padauk:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Anton&family=Noto+Sans+TC&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -6,22 +10,22 @@
 
 .botonVermas {
   background-color: gray;
-  border-color: #b4b4b4;
+  border-color: white;
   align-items: center;
   justify-content: center;
 }
 .botonVermas:hover {
-  background-color: white;
+  background-color: red;
   color: black;
-  border-color: white;
+  border-color: #b4b4b4;
 }
 
 header {
   padding: 20px;
   text-align: center;
-  background-color: white;
   position: -webkit-sticky;
   position: sticky;
+  background-color: white;
   top: 0;
   font-family: "Padauk", sans-serif;
   display: flex;
@@ -30,19 +34,16 @@ header {
   z-index: 1;
   flex-direction: column;
   gap: 0px;
-  font-family: "Noto Sans TC", sans-serif;
 }
 header .navbar {
-  background-color: #b4b4b4;
+  background-color: white;
 }
 header .navbar .navbar-brand {
   margin-left: 20px;
   margin-right: 20px;
-  color: rgb(107, 54, 54);
   cursor: pointer;
-  font-family: "Anton", sans-serif;
-  font-family: "Noto Sans TC", sans-serif;
   transition: transform 0.2s;
+  font-family: "Padauk", sans-serif;
 }
 header .navbar .navbar-brand:hover {
   transform: scale(1.05);
@@ -50,7 +51,7 @@ header .navbar .navbar-brand:hover {
 header .navbar .nav-item {
   font-family: "Padauk", sans-serif;
   text-decoration: none;
-  color: grey;
+  color: white;
 }
 header .navbar .nav-item .nav-link {
   font-weight: 600;
@@ -101,6 +102,6 @@ footer {
   bottom: 5px;
   right: 5px;
   cursor: pointer;
-  font-family: "Noto Sans TC", sans-serif;
+  font-family: "Padauk", sans-serif;
   z-index: 2;
 }/*# sourceMappingURL=estilos.css.map */

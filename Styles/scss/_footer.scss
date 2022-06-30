@@ -1,6 +1,6 @@
 footer {
     text-align: center;
-    background-color: #b4b4b4;
+    background-color: $gris;
     padding: 30px;
     font-family: 'Padauk', sans-serif;
 }
@@ -11,6 +11,6 @@ footer {
     bottom: 5px;
     right: 5px;
     cursor: pointer;
-    font-family: 'Noto Sans TC', sans-serif;
+    font-family: 'Padauk', sans-serif;
     z-index: 2;
 }
