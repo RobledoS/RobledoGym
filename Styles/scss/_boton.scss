@@ -1,0 +1,26 @@
+.botonVermas {
+    background-color: gray;
+    border-color: rgb(7, 1, 1);
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    border-radius: 5px;
+    font-family: 'Padauk', sans-serif;
+
+
+
+    &:hover {
+        background-color: rgb(134, 130, 130);
+        color: black;
+        border-color: $gris;
+        justify-content: center;
+        align-items: center;
+        font-family: 'Padauk', sans-serif;
+        }
+}
+
+ 
+
+
+
+

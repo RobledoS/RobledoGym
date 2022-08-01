@@ -1,0 +1,208 @@
+@import url('https://fonts.googleapis.com/css2?family=Padauk:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Noto+Sans+TC&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    padding: 20px;
+    text-align: center;
+    background-color: white;
+    position: sticky;
+    top: 0;
+    font-family: 'Padauk', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    text-decoration: none;
+}
+
+.logo {
+    margin-left: 20px;
+    margin-right: 20px;
+    color: rgb(107, 54, 54);
+    cursor: pointer;
+    font-family: 'Anton', sans-serif;
+    font-family: 'Noto Sans TC', sans-serif;
+}
+
+
+
+.imagenFondo {
+    background-image: url("../img/imagenFondo.jpg");
+    background-position: center center;
+    background-size: cover;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Noto Sans TC', sans-serif;
+}
+  
+
+.imagenFondo h4 {
+    font-family: 'Padauk', sans-serif;
+    color: #b4b4b4;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    font-family: 'Noto Sans TC', sans-serif;
+}
+
+footer {
+    text-align: center;
+    background-color: #b4b4b4;
+    padding: 30px;
+    font-family: 'Padauk', sans-serif;
+}
+
+
+.wp {
+    width: 50px;
+    position: fixed;
+    bottom: 5px;
+    right: 5px;
+    cursor: pointer;
+    font-family: 'Noto Sans TC', sans-serif;
+    z-index: 2;
+}
+
+@media screen and (max-width: 648px){
+    .cards {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4, 1fr);
+        grid-template-areas:
+            "musculacion"
+            "crossfit"
+            "aerobico"
+            "salon";
+            padding: 20px;
+            font-family: 'Noto Sans TC', sans-serif;
+        }
+
+
+    .menu, header {
+        flex-direction: column;
+        gap: 0px;
+        font-family: 'Noto Sans TC', sans-serif;
+    }
+
+    .imagenFondo { 
+        height: 200px;
+        padding: 75px;
+        background-size: cover;
+        font-family: 'Noto Sans TC', sans-serif;
+        height: auto;
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+     
+    
+    
+     .quienesPolitica {
+        font-size: small;
+        color: #b4b4b4
+    }
+  }
+
+  .navbar-brand{
+    margin-left: 20px;
+    margin-right: 20px;
+    color: rgb(10, 10, 10);
+    cursor: pointer;
+    font-family: 'Anton', sans-serif;
+    transition: transform .2s;
+    }
+
+    .navbar-brand:hover {
+        transform: scale(1.05);
+        font-family: 'Anton', sans-serif;
+    }
+    
+
+    .nav-item {
+        font-family: 'Padauk', sans-serif;
+    }
+    
+    .nav-item > a {
+        font-family: 'Padauk', sans-serif;
+        text-decoration: none;
+        color: #b4b4b4;
+      }
+
+      .nav-item .nav-link.active {
+        font-weight: 600;
+        text-decoration: underline;
+        font-family: 'Anton', sans-serif;
+      }
+    
+    .imagenFondo h4 {
+     color: rgb(165, 158, 158);
+     margin: 0;
+ }
+    .tarjetitas {
+        padding-block: 50px;
+    }
+    
+    .card {
+    background-color: #b4b4b4;
+     }
+
+    .botonVermas {
+        background-color: #b4b4b4;
+        border-color: #b4b4b4;
+        align-items: center;
+        justify-content: center;
+    }
+
+     .botonVermas:hover {
+    background-color: white;
+    color: black;
+    border-color: white;
+    }
+
+
+    .col-12 h2 {
+    text-align: center;
+    color: #b4b4b4;
+    font-family: 'Noto Sans TC', sans-serif;
+    }
+        
+    .formato__formulario {
+        background-color: #b4b4b4;
+    }
+    
+    .colorSection{
+        display: flex;
+        background-color: #b4b4b4;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .card {
+        transition: all 0.2s;
+    }
+
+    .card:hover {
+     box-shadow: 5px 5px 20px rgba(0,0,0.0,4);
+     transform: scale(1.05)
+    }
+ 
+  .imagenTarjetitas {
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+    justify-content: center;
+}
+
+.imagenTarjetitas img { 
+    object-fit: cover;
+    width: auto;
+    min-width: 100%;
+    height: 100%;
+}
+

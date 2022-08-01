@@ -1,0 +1,61 @@
+.tarjetitas {
+    padding-block: 50px;
+
+
+    .card1 {
+        background-color: $gris;
+        transition: all 0.2s;
+        justify-content: center;
+        align-items: center;
+        border-radius: 10px;
+        padding: 20px;
+    
+        
+        
+        &:hover {
+         box-shadow: 5px 5px 20px rgba(0,0,0.0,4);
+         transform: scale(1.05);
+        }
+
+      
+    } 
+
+    .card2, .card3 {
+        @extend .card1; 
+        } 
+}  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,16 @@
+footer {
+    text-align: center;
+    background-color: $gris;
+    padding: 30px;
+    font-family: 'Padauk', sans-serif;
+}
+
+.wp {
+    width: 50px;
+    position: fixed;
+    bottom: 5px;
+    right: 5px;
+    cursor: pointer;
+    font-family: 'Padauk', sans-serif;
+    z-index: 2;
+}
